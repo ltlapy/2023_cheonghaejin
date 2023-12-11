@@ -1,0 +1,102 @@
+/* overrides styles.css*/
+
+.body {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.introduce {
+    width: 60%;
+    justify-content: space-between;
+}
+
+/* === 본문 === */
+
+article {
+    padding: 5rem 2.5rem;
+    line-height: 1.4em;
+}
+article img {
+    width: 70%;
+}
+article p {
+    text-indent: .8em;
+    margin: .1em;
+}
+
+.qna-item {
+    margin-bottom: 1.2em;
+}
+
+.question {
+    margin-left: 2em;
+    padding-left: .75em;
+    border-left: 6px solid white;
+    font-size: 1.2em;
+}
+
+.answer {
+    margin-top: 0.5em;
+    margin-left: 2em;
+    padding-left: .75em;
+
+    column-gap: 1.4em;
+    /* border-left: 2px solid skyblue; */
+}
+
+aside {  /*  목차 사이드바  */
+    /* flex-direction: row; */
+    position: sticky;
+    top: 0;
+
+    background: rgb(14, 88, 158);
+    flex-shrink: 0;
+    
+    /* width: 15rem; */
+    flex-basis: 15rem;
+    height: 80vh;
+
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+}
+
+aside .index_title {
+    font-size: 1.6em;
+    color: white;
+}
+
+aside hr {
+    border: none;
+    height: 2px;
+    background-color: white;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li, aside a {
+    color: rgb(255, 255, 255);
+    padding-bottom: .5rem;
+}
+
+aside a {
+    text-decoration: none;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+    .body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    aside {
+        position: initial;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+}

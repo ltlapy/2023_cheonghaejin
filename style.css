@@ -1,0 +1,228 @@
+/* div {
+  border: 1px solid red;
+  padding: 4px;
+} */
+
+/* ==== MAINPAGE ==== */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  --background: white;
+  --hightlight: rgb(46, 117, 182);
+  background: var(--background);
+  background-image: radial-gradient(var(--hightlight) 5%, transparent 0),
+    radial-gradient(var(--hightlight) 5%, transparent 0);
+  background-position: 0 0, 7.5px 7.5px;
+  background-size: 15px 15px;
+  font-family: "Pretendard-Regular";
+
+  font-size: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.7rem 0.4rem;
+
+  width: 100%;
+}
+
+.top-space {
+  /* background: skyblue; */
+  background-image: url('./assets/470.jpg');
+  background-repeat: repeat;
+  background-size: 20rem;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+
+  align-items: end;
+  flex-direction: row-reverse;
+  flex-grow: 0;
+
+  padding: 0rem 1rem;
+}
+.top-space h1 {
+  display: inline-block;
+  width: auto;
+  bottom: 0.5rem;
+  right: 1rem;
+
+  padding: 0.25rem 0.3rem;
+
+  font-size: 0.8em;
+  font-weight: 400;
+  background-color: white;
+  color: rgb(46, 117, 182);
+}
+
+header .introduce {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+header .introduce img {  /* 인터뷰 대상자 사진 */
+  width: 9vw;
+  min-width: 6em;
+}
+.interviewee-name {
+  font-size: 1.2em;
+  margin-left: 20px;
+  
+}
+.interviewee-alias {
+  font-size: 0.8em;
+}
+.interviewee-organization {
+  margin-left: 20px;
+  word-break: keep-all;
+}
+
+header .quote {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+header {
+  background: rgb(46, 117, 182);
+  color: white;
+}
+
+.body {
+  background-color: rgb(222, 235, 247);
+  width: 75%;
+  min-height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pseudo-buttons a {
+  border-radius: 5px;
+  padding: 8px 30px;
+  min-width: 4em;
+  
+  background-color: rgb(91, 155, 213);
+  color: #fff;
+
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+}
+.main-buttons {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.button-solid {
+    background-color: rgb(222,235,247) !important;
+    color: rgb(91, 155, 213) !important;
+}
+
+.topbar-buttons {
+    /* justify-self: end; */
+    text-align: left;   
+}
+.topbar-buttons a {
+    display: block;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    margin-bottom: .3em;
+    text-align: left;
+}
+
+
+.horizontal {
+  display: inline-block;
+}
+.narrow_text {
+  max-width: 35rem;
+}
+
+.description {
+  /* max-width: 35rem; */
+  width: 100%;
+
+  margin: 20px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+.description p {
+  /* line-height: 1.4em; */
+  text-indent: .7em;
+  margin-bottom: 1em;
+}
+
+.personal-info {
+  margin-bottom: 25px;
+}
+
+.quote {
+  margin-bottom: 25px;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.photo img {
+  border-radius: .25rem;
+}
+.photo .photo-description {
+  color: rgb(46, 117, 182);
+}
+
+@media screen and (max-width: 900px) {
+  .body {
+    width: 100%;
+  }
+}
+
+.history_gallery {
+  display: grid;
+  width: 100%;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.history_gallery section {
+  /* max-width: 24rem; */
+}
+.history_gallery section img {
+  object-fit: cover;
+  /* object-position: center bottom; */
+  overflow: hidden;
+
+  width: 100%;
+  height: 10em;
+}
+/* .history_gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.history_gallery section {
+  flex: 1 1 30%;
+}
+.history_gallery section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
